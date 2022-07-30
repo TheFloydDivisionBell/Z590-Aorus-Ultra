@@ -139,3 +139,7 @@ What i've worked out so far..
 > :warning: **Warning** DISCLAIMER: This EFI does not work for my specific build!!! It crashes at the recovery Apple logo but can be used to borrow files from if necessary.
 
 - <a href="https://github.com/nickw444/opencore-efi-z590">nickw444's Gigabyte Z590 Aorus Elite Monterey Hackintosh</a>
+
+Special Thanks
+
+- CorpNewt in the "Hackintosh & PC Tech" discord server for pointing me in the direction of the Z590 guide at gone 11PM!
