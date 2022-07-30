@@ -16,6 +16,8 @@
 | Storage       | Sabrent 512GB Rocket NVMe PCIe M.2 2280                                             |
 
 
+<img src="AboutThisMac.png">
+
 ## Introduction
 
 I was previously running a Z390i Aorus Pro WiFi with the i5-9600K which worked extremely well. I wanted to upgrade to a newer gen board and try to make use of my old Apple Thunderbolt display so I'm currently waiting for an Alpine Ridge Thunderbolt expansion card to arrive so that I can flash it and attempt to get it working. If it turns out to not be possible I will just sell the display and continue to use my MSI MAG274QRF-QD which works perfectly and I would personally recommend.
@@ -34,7 +36,7 @@ This is only my second hackintosh and is at the time of writing this guide only 
 
 <a href="https://github.com/dortania/Getting-Started-With-ACPI/blob/master/extra-files/compiled/SSDT-RHUB.aml" target="_blank">SSDT-RHUB.aml</a>
 
-SSDT-SBUS-MCHC.aml (Needs compiling manually but I took it from a similar Aorus build)
+SSDT-SBUS-MCHC.aml (Needs compiling manually but I took it from <a href="https://github.com/nickw444/opencore-efi-z590">nickw444's Gigabyte Z590 Aorus Elite Monterey Hackintosh</a>. However do not use this EFI as it is not compatible with this hardware.
 
 ## Drivers
 HfsPlus.efi (Commit 16/01/2022)
@@ -42,25 +44,25 @@ OpenRuntime.efi (0.8.2)
 OpenCanopy.efi
 
 ## Kexts
-Airportltlwm (v2.1.0_stable_Monterey)
+<a href="https://github.com/OpenIntelWireless/itlwm/releases/tag/v2.1.0" target="_blank">Airportltlwm (v2.1.0_stable_Monterey)</a>
 
 <a href="https://github.com/acidanthera/BrcmPatchRAM" target="_blank">BlueToolFixup (2.6.3)</a>
 
-IntelBluetoothFirmware (v2.1.0)
+<a href="https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/v2.1.0" target="_blank">IntelBluetoothFirmware (v2.1.0)</a>
 
-IntelBluetoothInjector (v2.1.0) - DISABLED
+<a href="https://github.com/OpenIntelWireless/IntelBluetoothFirmware/releases/tag/v2.1.0" target="_blank">IntelBluetoothInjector (v2.1.0) - DISABLED</a>
 
-Lilu (v.1.6.1)
+<a href="https://github.com/acidanthera/Lilu/releases/tag/1.6.1" target="_blank">Lilu (v.1.6.1)</a>
 
-USBInjectAll
-
-USBMap (Needs building manually and bluetooth wont be enabled until this is mapped)
+<a href="https://github.com/RehabMan/OS-X-USB-Inject-All" target="_blank">USBInjectAll (latest)</a>
 
 <a href="https://github.com/osy/USBWakeFixup" target="_blank">USBWakeFixup</a>
 
-VirtualSMC (v.1.3.0)
+<a href="https://github.com/acidanthera/VirtualSMC/releases/tag/1.3.0" target="_blank">VirtualSMC (v.1.3.0)</a>
 
-WhateverGreen (v.1.6.0)
+<a href="https://github.com/acidanthera/WhateverGreen/releases/tag/1.6.0" target="_blank">WhateverGreen (v.1.6.0)</a>
+
+USBMap (Needs building manually and bluetooth wont be enabled until this is mapped - see tools)
 
 ## Tools
 
