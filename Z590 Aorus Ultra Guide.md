@@ -127,8 +127,8 @@ What i've worked out so far..
 
 ## Benchmark's
 
-<img src="geekbench.png" height="700">
-<img src="metal.png" height="700">
+<img src="geekbench.png">
+<img src="metal.png">
 
 ## Sources
 
