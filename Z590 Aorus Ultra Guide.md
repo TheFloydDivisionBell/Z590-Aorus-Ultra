@@ -34,6 +34,8 @@ This is only my second hackintosh and is at the time of writing this guide only 
 
 :x: Thunderbolt (on outer case - need to fiddle with usb map)
 
+:x: Ethernet - causes kernel panic when I plug something in (maybe just needs usb map?)
+
 # Hardware
 
 | Component     | Details                                                                             |
@@ -116,6 +118,12 @@ SSDT-SBUS-MCHC.aml (Needs compiling manually but I took it from <a href="https:/
 ## Tools
 
 - <a href="https://github.com/corpnewt/USBMap" target="_blank">USB Map Tool</a>
+
+## USB Mapping
+
+What i've worked out so far..
+
+<img src="BackPanelConnectors.png">
 
 ## Benchmark's
 
