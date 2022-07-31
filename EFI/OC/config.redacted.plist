@@ -266,6 +266,11 @@
 				<key>layout-id</key>
 				<data>AQAAAA==</data>
 			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>device-id</key>
+				<data>8hUAAA==</data>
+			</dict>
 		</dict>
 		<key>Delete</key>
 		<dict/>
@@ -1328,7 +1333,7 @@
 				<key>SystemAudioVolume</key>
 				<data>Rg==</data>
 				<key>boot-args</key>
-				<string>-v keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera</string>
+				<string>-v keepsyms=1 debug=0x100 alcid=1 agdpmod=pikera e1000=0</string>
 				<key>csr-active-config</key>
 				<data>AAAAAA==</data>
 				<key>prev-lang:kbd</key>

@@ -24,6 +24,8 @@ This is only my second hackintosh and is at the time of writing this guide only 
 
 :white_check_mark: Displayport / HDMI
 
+:white_check_mark: Ethernet (Needs additional config in the OS)
+
 :x: Airdrop (need to fiddle)
 
 :x: Unlock with Apple Watch, Sidecar
@@ -33,8 +35,6 @@ This is only my second hackintosh and is at the time of writing this guide only 
 :x: iGPU (Disabled in bios)
 
 :x: Thunderbolt (on outer case - need to fiddle with usb map)
-
-:x: Ethernet - causes kernel panic when I plug something in (maybe just needs usb map?)
 
 # Hardware
 
@@ -122,6 +122,16 @@ SSDT-SBUS-MCHC.aml (Needs compiling manually but I took it from <a href="https:/
 ## USB Mapping
 
 What i've worked out so far..
+
+## Ethernet
+
+### config.plist
+- I set my device property to PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0) -> device-id: F2150000
+- I left the Kernel patch in place for I225-V (disabled: false) as it doesn't apply to Monterey anyway
+- I set my boot arg to e1000=0
+
+### OS Configuration
+- In the advanced settings of my ethernet I set the hardware tab to 1000baseT, "full-duplex, flow-control", Standard (1500)
 
 <img src="BackPanelConnectors.png">
 
