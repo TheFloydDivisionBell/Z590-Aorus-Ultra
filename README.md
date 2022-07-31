@@ -34,8 +34,6 @@ This is only my second hackintosh and is at the time of writing this guide only 
 
 :x: iGPU (Disabled in bios)
 
-:x: Thunderbolt (on outer case - need to fiddle with usb map)
-
 # Hardware
 
 | Component     | Details                                                                             |
