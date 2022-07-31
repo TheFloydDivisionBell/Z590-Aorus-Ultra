@@ -119,10 +119,6 @@ SSDT-SBUS-MCHC.aml (Needs compiling manually but I took it from <a href="https:/
 
 - <a href="https://github.com/corpnewt/USBMap" target="_blank">USB Map Tool</a>
 
-## USB Mapping
-
-What i've worked out so far..
-
 ## Ethernet
 
 ### config.plist
@@ -132,6 +128,10 @@ What i've worked out so far..
 
 ### OS Configuration
 - In the advanced settings of my ethernet I set the hardware tab to 1000baseT, "full-duplex, flow-control", Standard (1500)
+
+## USB Mapping
+
+What i've worked out so far..
 
 <img src="BackPanelConnectors.png">
 
