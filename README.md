@@ -131,7 +131,7 @@ SSDT-SBUS-MCHC.aml (Needs compiling manually but I took it from <a href="https:/
 
 What i've worked out so far..
 
-<img src="BackPanelConnectors.png">
+<img src="USB-Mapping.png">
 
 ## Benchmark's
 
