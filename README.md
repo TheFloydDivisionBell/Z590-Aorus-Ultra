@@ -6,7 +6,11 @@
 
 I was previously running a Z390i Aorus Pro WiFi with the i5-9600K which worked extremely well. I wanted to upgrade to a newer gen board and try to make use of my old Apple Thunderbolt display so I'm currently waiting for an Alpine Ridge Thunderbolt expansion card to arrive so that I can flash it and attempt to get it working. If it turns out to not be possible I will just sell the display and continue to use my MSI MAG274QRF-QD which works perfectly and I would personally recommend.
 
-This is only my second hackintosh and is at the time of writing this guide only 2 days old so there's a lot to improve but I thought I would write it up so far as there are no guides for this specific motherboard from what I can find.
+*Update*: Apple Thunderbolt display works with the pcie card straight out of the box I was amazed to find! Other gen cards may need flashing.
+
+This is only my second hackintosh and is at the time of writing this guide only a few days old so there's a lot to improve but I thought I would write it up so far as there are no guides for this specific motherboard from what I can find.
+
+*Update*: I'm now ditching the onboard Intel NIC and using my old BCM94360CS2 so will update in a few days when the PCIE adapter for it arrives.
 
 # Summary of what works/doesn't work so far
 
@@ -26,11 +30,9 @@ This is only my second hackintosh and is at the time of writing this guide only 
 
 :white_check_mark: Ethernet (Needs additional config in the OS)
 
-:x: Airdrop (need to fiddle)
+:x: Airdrop, Unlock with Apple Watch, Sidecar (will be fixed by WiFi replacement soon)ß
 
-:x: Unlock with Apple Watch, Sidecar
-
-:x: USB 2.x (Disabled due to port limits)
+:x: USB 2.0 ports - can't seem to figure out how to map them
 
 :x: iGPU (Disabled in bios)
 
@@ -38,16 +40,17 @@ This is only my second hackintosh and is at the time of writing this guide only 
 
 | Component     | Details                                                                             |
 | ------------- | ----------------------------------------------------------------------------------- |
-| CPU           | Intel&reg; i5-11600K (Rocket Lake)                                                       |
+| CPU           | Intel&reg; i5-11600K (Rocket Lake)                                                  |
 | Motherboard   | Gigabyte Z590 Aorus Ultra ATX for LGA 1200                                          |
 | GFX           | AMD 6600 XT Sapphire Pulse                                                          |
 | RAM           | Corsair CMK16GX4M2B3000C15 Vengeance LPX 16 GB (2 x 8 GB) DDR4 3000 MHz C15 XMP 2.0 |
 | PSU           | Corsair RM650x 80 Plus Gold 650 W                                                   |
 | Case          | Corsair 4000D Airflow Mid-Tower ATX                                                 |
-| LAN           | i225-V (onboard Intel&reg; 2.5GbE LAN)                                                   |
-| WiFi          | Intel&reg; Wi-Fi 6 AX200 (onboard)                                                       |
+| LAN           | i225-V (onboard Intel&reg; 2.5GbE LAN)                                              |
+| WiFi          | Intel&reg; Wi-Fi 6 AX200 (onboard)                                                  |
 | Audio         | Realtek® ALC4080 codec                                                              |
 | Storage       | Sabrent 512GB Rocket NVMe PCIe M.2 2280                                             |
+| Thunderbolt   | Gigabyte Alpine Ridge 40gb/s Intel thunderbolt 3 add-in card                        |
 
 # BIOS
 
