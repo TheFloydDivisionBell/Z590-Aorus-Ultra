@@ -30,7 +30,7 @@ This is only my second hackintosh and is at the time of writing this guide only 
 
 :white_check_mark: Ethernet (Needs additional config in the OS)
 
-:x: Airdrop, Unlock with Apple Watch, Sidecar (will be fixed by WiFi replacement soon)ß
+:x: Airdrop, Unlock with Apple Watch, Sidecar (will be fixed by WiFi replacement soon)
 
 :x: USB 2.0 ports - can't seem to figure out how to map them
 
