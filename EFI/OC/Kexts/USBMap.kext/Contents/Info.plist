@@ -70,7 +70,7 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>#port</key>
+						<key>port</key>
 						<data>
 						AwAAAA==
 						</data>
@@ -161,10 +161,12 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>#port</key>
+						<key>port</key>
 						<data>
 						DAAAAA==
 						</data>
+						<key>Comment</key>
+						<string>BcrmAirport</string>
 					</dict>
 					<key>HS13</key>
 					<dict>
@@ -181,6 +183,8 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>255</integer>
+						<key>Comment</key>
+						<string>IntelBluetooth</string>
 						<key>port</key>
 						<data>
 						DgAAAA==
@@ -190,7 +194,7 @@
 					<dict>
 						<key>UsbConnector</key>
 						<integer>3</integer>
-						<key>#port</key>
+						<key>port</key>
 						<data>
 						DwAAAA==
 						</data>
