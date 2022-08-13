@@ -122,7 +122,7 @@ SSDT-SBUS-MCHC.aml (Needs compiling manually but I took it from <a href="https:/
 
 To get the display working you simple plug in the alpine ridge card into a pcie slot and connect up to the thunderbolt header on the motherboard. Then use the loop back display cable between your GPU and the alpine ridge card. I then used an official Apple Thunderbolt 3 (USB-C) to Thunderbolt 2 Adapter to plug in the Thunderbolt 2 cable from the monitor. Worked instantly without any patches to the card.
 
-<img src="AlpineRidgeIntoGPU.PNG">
+<img src="AlpineRidgeIntoGPU.png">
 
 ## WiFi & Bluetooth
 
