@@ -4,13 +4,9 @@
 
 # Introduction
 
-I was previously running a Z390i Aorus Pro WiFi with the i5-9600K which worked extremely well. I wanted to upgrade to a newer gen board and try to make use of my old Apple Thunderbolt display so I'm currently waiting for an Alpine Ridge Thunderbolt expansion card to arrive so that I can flash it and attempt to get it working. If it turns out to not be possible I will just sell the display and continue to use my MSI MAG274QRF-QD which works perfectly and I would personally recommend.
+I was previously running a Z390i Aorus Pro WiFi with the i5-9600K which worked extremely well. I wanted to upgrade to a newer gen board and try to make use of my old Apple Thunderbolt display which works with the Alpine Ridge pcie card straight out of the box I was amazed to find! Other gen cards may need flashing.
 
-*Update*: Apple Thunderbolt display works with the pcie card straight out of the box I was amazed to find! Other gen cards may need flashing.
-
-This is only my second hackintosh and is at the time of writing this guide only a few days old so there's a lot to improve but I thought I would write it up so far as there are no guides for this specific motherboard from what I can find.
-
-*Update*: I'm now ditching the onboard Intel NIC and using my old BCM94360CS2 so will update in a few days when the PCIE adapter for it arrives.
+I have now ditched the onboard Intel NIC and using my old BCM94360CS2 with a PCIE adapter which I will detail further down this guide.
 
 # Summary of what works/doesn't work so far
 
@@ -30,7 +26,9 @@ This is only my second hackintosh and is at the time of writing this guide only 
 
 :white_check_mark: Ethernet (Needs additional config in the OS)
 
-:x: Airdrop, Unlock with Apple Watch, Sidecar (will be fixed by WiFi replacement soon)
+:white_check_mark: Airdrop, Unlock with Apple Watch
+
+:x: Sidecar - I suspect something isn't configured quite right
 
 :x: USB 2.0 ports - can't seem to figure out how to map them
 
@@ -47,8 +45,8 @@ This is only my second hackintosh and is at the time of writing this guide only 
 | PSU           | Corsair RM650x 80 Plus Gold 650 W                                                   |
 | Case          | Corsair 4000D Airflow Mid-Tower ATX                                                 |
 | LAN           | i225-V (onboard Intel&reg; 2.5GbE LAN)                                              |
-| WiFi          | Intel&reg; Wi-Fi 6 AX200 (onboard)                                                  |
-| Audio         | Realtek® ALC4080 codec                                                              |
+| WiFi & BT     | BCM94360CS2 & WiFi Bluetooth 4.0 PCIE Card adapter                                  |
+| Audio         | Realtek® ALC4080 codec (No kext required)                                           |
 | Storage       | Sabrent 512GB Rocket NVMe PCIe M.2 2280                                             |
 | Thunderbolt   | Gigabyte Alpine Ridge 40gb/s Intel thunderbolt 3 add-in card                        |
 
@@ -119,6 +117,20 @@ SSDT-SBUS-MCHC.aml (Needs compiling manually but I took it from <a href="https:/
 ## Tools
 
 - <a href="https://github.com/corpnewt/USBMap" target="_blank">USB Map Tool</a>
+
+## Thunderbolt display & Alpine Ridge
+
+To get the display working you simple plug in the alpine ridge card into a pcie slot and connect up to the thunderbolt header on the motherboard. Then use the loop back display cable between your GPU and the alpine ridge card. I then used an official Apple Thunderbolt 3 (USB-C) to Thunderbolt 2 Adapter to plug in the Thunderbolt 2 cable from the monitor. Worked instantly without any patches to the card.
+
+<img src="AlpineRidgeIntoGPU.PNG">
+
+## WiFi & Bluetooth
+
+To get the BCM94360CS2 working I used an adapter from <a href="https://amzn.eu/d/1DfFikv">Amazon</a> which claimed to work natively without additional kexts. However it seemed I still needed to install the BCRM fixup, firmware and patch3 kexts. I already had the BCM card left over from a previous build but you can find them all over eBay.
+
+<img src="WiFiCard.JPG">
+
+<img src="WiFiCardAndBluetooth.png">
 
 ## Ethernet
 
